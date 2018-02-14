@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/bayrinat/CodingChallenge.svg?branch=master)](https://travis-ci.org/bayrinat/CodingChallenge)
+[![Go Report Card](https://goreportcard.com/badge/github.com/bayrinat/CodingChallenge)](https://goreportcard.com/report/github.com/bayrinat/CodingChallenge)
 ### Coding Challenge
 
 1. Implement a function that takes two integers a and b and returns their product, without using
