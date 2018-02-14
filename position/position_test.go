@@ -1,13 +1,13 @@
-package possition
+package position
 
 import "testing"
 
 func TestPosition(t *testing.T) {
 	tests := []struct {
-		name string
+		name  string
 		array []int
 		x     int
-		want int
+		want  int
 	}{
 		{"x is in array", []int{1, 2, 3, 4}, 2, 1},
 		{"x is not in array", []int{1, 2, 3, 4}, 7, -1},

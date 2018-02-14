@@ -12,13 +12,14 @@ func (r Rune) Len() int           { return len(r) }
 func (r Rune) Swap(i, j int)      { r[i], r[j] = r[j], r[i] }
 func (r Rune) Less(i, j int) bool { return r[i] < r[j] }
 
-func (r Rune) Equal(a []rune) bool {
-	if len(r) != len(a) {
+// Equal returns true if
+func (r Rune) Equal(rune Rune) bool {
+	if r.Len() != rune.Len() {
 		return false
 	}
 
 	for index, elem := range r {
-		if a[index] != elem {
+		if rune[index] != elem {
 			return false
 		}
 	}

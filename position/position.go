@@ -1,4 +1,4 @@
-package possition
+package position
 
 import (
 	"sort"
@@ -33,4 +33,3 @@ func Position(array []int, x int) int {
 
 	return index
 }
-

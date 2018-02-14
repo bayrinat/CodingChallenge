@@ -22,11 +22,12 @@ func Product(a int, b int) int {
 		index++
 	}
 
-	if sign(a, b) {
-		return result
-	} else {
+	// if sign of result is a negative number
+	if !sign(a, b) {
 		return -result
 	}
+
+	return result
 }
 
 // sign returns true if both integers are positive or negative, false otherwise
@@ -42,11 +43,12 @@ func sign(a int, b int) bool {
 func absMax(a int, b int) int {
 	aabs := math.Abs(float64(a))
 	babs := math.Abs(float64(b))
+
 	if aabs < babs {
 		return int(babs)
-	} else {
-		return int(aabs)
 	}
+
+	return int(aabs)
 }
 
 // absMin returns the minimum of abs(a) and abs(b)
@@ -56,7 +58,7 @@ func absMin(a int, b int) int {
 
 	if aabs < babs {
 		return int(aabs)
-	} else {
-		return int(babs)
 	}
+
+	return int(babs)
 }
